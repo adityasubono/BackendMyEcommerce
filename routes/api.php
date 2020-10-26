@@ -20,13 +20,22 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 
-// Product Routes
+ //Product Routes
 Route::any('add',[ProductController::class, 'add']);
 Route::any('update',[ProductController::class, 'update']);
 Route::any('delete',[ProductController::class, 'delete']);
 Route::any('show',[ProductController::class, 'show']);
+Route::any('getdata',[ProductController::class, 'getData']);
 
 //User
 Route::any('register',[UserController::class, 'register']);
 Route::any('login',[UserController::class, 'login']);
 
+
+//Route::any('add', 'ProductController@add');
+//Route::any('update','ProductController@update');
+//Route::any('delete','ProductController@delete');
+//Route::any('show','ProductController@show');
+//
+//Route::any('register','UserController@register');
+//Route::any('login','UserController@login');
